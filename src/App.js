@@ -2,7 +2,7 @@ import { Expenses } from './components/Expenses/Expenses';
 
 function App() {
 
-  const expenses = [
+  const items = [
     {
       id: 'e1',
       title: 'Toilet Paper',
@@ -30,8 +30,10 @@ function App() {
 
   return (
     <>
-      <h2>Let's get started!</h2>
-      <Expenses expenses={expenses} />
+      <h2>Expenses Tracker</h2>
+      <div className='expenses'>
+      <Expenses items={items} />
+      </div>
     </>
   );
 }
