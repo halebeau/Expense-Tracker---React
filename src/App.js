@@ -1,7 +1,7 @@
 import { Expenses } from './components/Expenses/Expenses';
 
 function App() {
-  const items = [
+  const expenses = [
     {
       id: 'e1',
       title: 'Toilet Paper',
@@ -28,11 +28,19 @@ function App() {
     },
   ];
 
+  // return React.createElement(
+  //   'div',
+  //   {},
+  //   React.createElement('h2', {}, 'Expenses Tracker'),
+  //   React.createElement(Expenses, { items: expenses })
+  // );
+  // turns into JSX below =>
+  
   return (
     <>
       <h2>Expenses Tracker</h2>
       <div className='expenses'>
-        <Expenses items={items} />
+        <Expenses items={expenses} />
       </div>
     </>
   );
