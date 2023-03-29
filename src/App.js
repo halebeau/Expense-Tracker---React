@@ -29,22 +29,17 @@ const App = () => {
     },
   ];
 
-  // return React.createElement(
-  //   'div',
-  //   {},
-  //   React.createElement('h2', {}, 'Expenses Tracker'),
-  //   React.createElement(Expenses, { items: expenses })
-  // );
-  // turns into JSX below =>
-  
+  const addExpenseHandler = expense => {
+    console.log('In App.js');
+    console.log(expense);
+  };
+
   return (
-    <>
-      <NewExpense />
-      <div className='expenses'>
-        <Expenses items={expenses} />
-      </div>
-    </>
+    <div>
+      <NewExpense onAddExpense={addExpenseHandler} />
+      <Expenses items={expenses} />
+    </div>
   );
-}
+};
 
 export default App;
