@@ -41,7 +41,7 @@ const ExpenseForm = (props) => {
           <input
             type="text" 
             value={enteredTitle} 
-            placeholder='Item name'
+            placeholder='item name'
             onChange={titleChangeHandler} 
           />
         </div>
@@ -52,7 +52,7 @@ const ExpenseForm = (props) => {
             min="0.01" 
             step="0.01"
             value={enteredAmount} 
-            placeholder='Item amount'
+            placeholder='item amount'
             onChange={amountChangeHandler} 
           />
         </div>

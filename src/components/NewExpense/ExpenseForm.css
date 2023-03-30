@@ -21,6 +21,10 @@
   max-width: 100%;
 }
 
+.new-expense__control input::placeholder {
+  color: rgb(109, 143, 109);
+}
+
 .new-expense__actions {
   text-align: right;
 }
